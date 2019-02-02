@@ -160,7 +160,7 @@ https://en.wikipedia.org/wiki/Simulated_annealing
 ## How to run
 
 * Eclipse IDE Photon 
-  * File -> Import -> Existing Maven Project -> Choose Project Directory ( production ) -> Run as Java application -> Go to your browser -> Type address http://localhost:8082/EngineeringDegreeApp/
+  * File -> Import -> Existing Maven Project -> Choose Project Directory ( production ) -> Run as Java application -> Go to your browser -> Type address localhost:8082/EngineeringDegreeApp/
 
 
 
