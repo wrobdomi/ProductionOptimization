@@ -68,7 +68,7 @@ https://en.wikipedia.org/wiki/Simulated_annealing
 ### Generating and visualizing input data
 ![input](https://user-images.githubusercontent.com/37666186/52163276-164a2b00-26e0-11e9-9b08-e3e67f9e1816.gif)
 ### Solving model I and presenting results
-![model1](https://user-images.githubusercontent.com/37666186/52163323-a25c5280-26e0-11e9-80af-0667ff93f975.gif)
+![model1](https://user-images.githubusercontent.com/37666186/52163365-30d0d400-26e1-11e9-8033-9269a3d24160.gif)
 ### Solving model II and III and presenting results
 
 ## Project Structure
