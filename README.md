@@ -8,7 +8,7 @@
   * [Genetic Algorithm](#genetic-algorithm)
   * [Simulated Annealing](#simulated-annealing)
 - [Application Demo](#application-demo)
-  * [Generating and visualizing input data](#generating-and-visualizing-data)
+  * [Generating and visualizing input data](#generating-and-visualizing-input-data)
   * [Solving model I and presenting results](#solving-model-i-and-presenting-results)
   * [Solving model II and III and presenting results](#solving-model-ii-and-iii-and-presenting-results)
 - [Project Structure](#project-structure)
