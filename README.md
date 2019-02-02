@@ -70,6 +70,8 @@ https://en.wikipedia.org/wiki/Simulated_annealing
 ### Solving model I and presenting results
 ![model1](https://user-images.githubusercontent.com/37666186/52163365-30d0d400-26e1-11e9-8033-9269a3d24160.gif)
 ### Solving model II and III and presenting results
+![model2](https://user-images.githubusercontent.com/37666186/52163376-7d1c1400-26e1-11e9-9d59-a33b2476531b.gif)
+
 
 ## Project Structure
 
