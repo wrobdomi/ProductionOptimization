@@ -15,7 +15,7 @@
 - [Technologies](#technologies)
   * [Architecture](#architecture)
   * [Libraries](#libraries)
-  * [Other resources](#other-resources)
+  * [Tools](#tools)
 - [How to run](#how-to-run)
 
 
@@ -75,70 +75,96 @@ https://en.wikipedia.org/wiki/Simulated_annealing
 
 ## Project Structure
 
-* spring-boot-web-application
+* production
   * src/main/java
-    + com.first.springboot.web.springbootwebapplication
-      * SpringBootWebApplication.java - main 
-    + com.first.springboot.web.springbootwebapplication.controller
-      * Controllers
-    + com.first.springboot.web.springbootwebapplication.model
-      * Todo.java - Entity class for database 
-    + com.first.springboot.web.springbootwebapplication.security
-      * Security Configuration
-    + com.first.springboot.web.springbootwebapplication.service
-      * Database repository and service
-  * scr/main/resources
+    + com.engineering.config - __configuration files__
+      * EngineeringAppConfig.java 
+      * MyDatabaseConfig.java
+      * MyDispatcherServletInitializer.java
+    + com.engineering.controller - __controllers with algorithms__
+      * AlgorithmsControllerModelOne.java
+      * AnnealingControllerModelTwo.java
+      * HomeController.java
+      * MachineTaskController.java
+    + com.engineering.dao - __Data Access Objects__
+      * MachineDAO.java
+      * MachineDAOImpl.java
+      * TaskDAO.java
+      * TaskDAOImpl.java
+    + com.engineering.entity - __DB entities__
+      * Machine.java
+      * Task.java
+    + com.engineering.json - __using JSON to communicate backend with frontend__ 
+      * JsonReceive.java
+      * JsonReceiveGeneticOne.java
+      * JsonResponse.java
+      * JsonResponseGeneticOne.java
+      * JsonResponseOne.java
+    + com.engineering.service - __other services__
+      * MachineService.java
+      * MachineServiceImpl.java
+      * TaskService.java
+      * TaskServiceImpl.java
+    + com.engineering.servicemodelone - __algorithms services__
+      * AnnealingOneService.java
+      * GeneticOneService.java
+      * ModelOneService.java
+    + com.engineering.servicemodeltwo - __algorithms services__
+      * AnnealingTwoService.java
+    + com.engineering.twotasks
+      * DoubleTask.java    
+  * src/main/resources
     + application.properties
-    + data.sql - initializing database
-    + test-server.ldif - users database ( LDAP )
-    + /static/css
+    + my_sql.properties
+  * src/main/webapp/resources
+    + css
       * CSS styles 
-    + /static/img
+    + images
       * Images
-    + /static/js
+    + js
       * JS scripts
-  * scr/main/webapp/WEB-INF/jsp
-    + jsp files
-    + /common
-      * shared jsp files
+  * src/main/webapp/WEB-INF/view
+    + common
+      * shared .jsp files
+    + common
+      * .jsp fragments
+    + other .jsp
   * pom.xml
 
 ## Technologies
 * Java 8
 * Maven
 * Spring 
-  * Boot 
-  * WEB
-  * H2 / JPA 
-  * DevTools
-  * Security
-  * LDAP
+* Hibernate
 * HTML/CSS/JavaScript
 * JSTL
+* JSP
 
 ### Libraries
 * Bootstrap
 * JQuery
+* Chart.js
+* Cytoscape.js
 
 ### Architecture
-
-* Typical Java EE architecture
 * MVC 
+* Database connection
 
-### Other resources
+### Tools
+  * Eclipse IDE Photon
+  * MySQL Workbench
+  * Apache Tomcat - Test server for building application
 
-* Clouds created basing on this online tutorial: 
-https://www.clicktorelease.com/blog/how-to-make-clouds-with-css-3d/
 
 
 ## How to run
 
 * Eclipse IDE Photon 
-  * File -> Import -> Existing Maven Project -> Choose Project Directory ( spring-boot-web-application ) -> Right-click SpringBootWebApplication.java -> Run as Java application -> Go to your browser -> Type address localhost:8999 
+  * File -> Import -> Existing Maven Project -> Choose Project Directory ( production ) -> Run as Java application -> Go to your browser -> Type address http://localhost:8082/EngineeringDegreeApp/
 
-* Servers 
-  * Apache Tomcat - Test server for building application
-  * Embedded Apache Directory Server  - Test server for LDAP
+
+
+
 
 
 
