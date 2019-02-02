@@ -1,0 +1,121 @@
+<div class="container">
+	
+	<form>
+		
+		
+		<div class="form-row">
+		
+		    <div class="form-group col-md-12 main-title">
+              <label for="iterNum">Number of iterations:</label>
+              <input type="number" class="form-control" id="iterNum" placeholder="200" value="200" min="10" max="1000" step="1">
+	        </div>
+         
+		</div>
+		
+		
+		<div class="form-row">
+		
+		    <div class="form-group col-md-12 main-title">
+              <label for="populationSize">Population size:</label>
+              <input type="number" class="form-control" id="populationSize" placeholder="30" value="30" min="2" max="100" step="1">
+	        </div>
+         
+		</div>
+		
+
+		<div class="form-row">
+			
+	    	<div class="form-group col-md-6 main-title">
+		      <label for="parentSelection">Parent Selection:</label>
+                <select class="form-control" id="parentSelection">
+                    <option>Tournament selection</option>
+                    <option>Tournament selection</option>
+                </select>
+		    </div>
+		    
+		     <div class="form-group col-md-6 main-title">
+              <label for="tournamentMembers">Tournament members:</label>
+              <input type="number" class="form-control" id="tournamentMembers" placeholder="5" value="5" min="2" max="8" step="1">
+	        </div>
+	    
+	    </div> 
+	        
+		
+		
+		<div class="form-row">
+			
+			<div class="form-group col-md-6 main-title">
+		      <label for="crossoverSelection">Crossover Selection:</label>
+                <select class="form-control" id="crossoverSelection">
+                    <option>Uniform</option>
+                    <option>Multipoint</option>
+                </select>
+		    </div>
+			
+			<div class="form-group col-md-6 main-title">
+              <label for="crossoverProb">Crossover probability:</label>
+              <input type="number" class="form-control" id="crossoverProb" placeholder="0.9" value="0.9" min="0.01" max="1" step="0.01">
+	        </div>
+	        
+		</div>
+		
+		
+		<div class="form-row">
+			
+	    	<div class="form-group col-md-4 main-title">
+		      <label for="mutationSelection">Mutation Selection:</label>
+                <select class="form-control" id="mutationSelection">
+                    <option>Bit Flip</option>
+                    <option>Bit Flip</option>
+                </select>
+		    </div>
+		    
+		     <div class="form-group col-md-4 main-title">
+              <label for="mutationSize">Mutation size:</label>
+              <input type="number" class="form-control" id="mutationSize" placeholder="3" value="3" min="2" max="8" step="1">
+	        </div>
+	        
+	         <div class="form-group col-md-4 main-title">
+              <label for="mutationProb">Mutation probability:</label>
+              <input type="number" class="form-control" id="mutationProb" placeholder="0.3" value="0.3" min="0.01" max="1" step="0.01">
+	        </div>
+	    
+	    </div> 
+	    
+	    
+	    
+	    <div class="form-row">
+			
+			<div class="form-group col-md-12 main-title">
+		      <label for="recreatingSelection">Recreating Selection:</label>
+                <select class="form-control" id="recreatingSelection">
+                    <option>Tournament</option>
+                    <option>Age based</option>
+                </select>
+		    </div>
+	
+		</div>
+		
+		
+		
+		<div class="form-row">
+			
+	    	<div class="form-group col-md-6 main-title">
+              <label for="cWeightG">Cost weight:</label>
+              <input type="number" class="form-control" id="cWeightG" placeholder="1" value="1" min="0" max="1" step="0.1">
+	        </div>
+	        
+	        <div class="form-group col-md-6 main-title">
+	          <label for="tWeightG">Time weight:</label>
+              <input type="number" class="form-control" id="tWeightG" placeholder="1" value="1" min="0" max="1" step="0.1">	
+	        </div>
+	    
+	    </div> 
+	    
+		
+		
+	</form>
+		
+	<span> <button class="btn btn-secondary"  onclick="callmodelgen()">Use Genetic Algorithm</button> </span>
+
+</div>

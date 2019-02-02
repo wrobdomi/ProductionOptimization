@@ -1,0 +1,40 @@
+<div class="container-fluid">
+		
+		<div class="table-caption">Time Matrix</div>
+		
+		<table style="border: 1px solid black; border-collapse: collapse; margin: auto;">
+		
+			<tr style="border: 1px solid black; border-collapse: collapse; ">
+				<td style="border: 1px solid black; border-collapse: collapse; background-color:#2d89ef;">Id</td>
+				<c:forEach var="tempTask" items="${tasks}">
+						
+							<td style="border: 1px solid black; border-collapse: collapse; background-color:#F5F5F5;">${tempTask.id}</td>
+						
+				</c:forEach>
+			</tr>
+			
+			<c:forEach var="costRow" items="${timeMatrix}" varStatus="loop2">
+				
+				<tr style="border: 1px solid black; border-collapse: collapse;">
+				  
+				  		
+							<c:forEach var="cell" items="${costRow}" varStatus="loop">
+								
+								  <c:if test = "${loop.index < 1}">
+							    		<td  id="time${loop2.index}t${loop.index}" style="border: 1px solid black; border-collapse: collapse; text-align: center; width:25px; background-color:#7e3878;"> ${cell} </td>
+							      </c:if>	
+								
+								  <c:if test = "${loop.index > 0}">
+					    				<td id="time${loop2.index}t${loop.index}" style="border: 1px solid black; border-collapse: collapse; text-align: center; width:25px;"> ${cell} </td>
+							      </c:if>		
+									
+							</c:forEach>
+					
+			   
+			   </tr>
+				   
+			</c:forEach>
+			
+		</table>
+		
+</div>

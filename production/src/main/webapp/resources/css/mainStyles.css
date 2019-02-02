@@ -1,0 +1,80 @@
+body{
+	  font-family: 'Lora', serif;	
+	  background-image: url("../images/sayagata.png");
+}
+
+img{
+	position: fixed;
+    top: 20;
+	right: 65;
+}
+
+/* CLASSES FOR TESTING --------------------------------------- */ 
+.test{
+	background-color: green;
+}
+
+.see-my-shape1{
+	border-style: solid;
+    border-width: 5px;
+    border-color: red;
+}
+
+.see-my-shape2{
+	border-style: solid;
+    border-width: 5px;
+    border-color: blue;
+}
+/* ---------------------------------------------------------- */
+
+/* TABLE STYLES --------------------------------------------- */
+.main-title{
+	text-align: center;
+}
+
+.table-header{
+	border-style: solid;
+	border-width: 3px;
+	border-color: black;
+}
+
+
+.row-border-task{
+	border-style: solid;
+	border-width: 1px;
+	border-color: gray;
+}
+
+.row-border-machine{
+	border-style: solid;
+	border-width: 1px;
+	border-color: gray;
+	background-color: #eff4ff;
+}
+
+/* ---------------------------------------------------------- */
+
+
+/* GRAPH STYLES --------------------------------------------- */
+
+#cy {
+    width: 100%;
+    height: 100%;
+   
+}
+
+/* ---------------------------------------------------------- */
+
+
+/* TABLE STYLES -------------------------------------------- */
+
+.table-caption{
+	text-align: center;
+}
+
+tr:hover {
+    background-color: #e6e2d3;
+}
+
+/* ---------------------------------------------------------- */
+

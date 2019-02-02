@@ -1,0 +1,47 @@
+<%@taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
+
+<html>
+    
+    <head>
+        <title>ProductionSystem</title>
+      	
+        <!-- Bootstrap 4  -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        
+        <!-- Google fonts -->
+        <link rel="stylesheet"  href="https://fonts.googleapis.com/css?family=Lora">
+        
+        <!-- My own styles  -->
+       	<link href="<c:url value="/resources/css/mainStyles.css" />" rel="stylesheet">
+       	<link href="<c:url value="/resources/css/sidenav.css" />" rel="stylesheet">
+       	
+       	
+        <!-- jQuery -->
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js">
+			  
+			  
+        <!-- Bootstrap 4 JS -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+        <!-- Cytoscape.js for graph visualization -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/cytoscape/3.2.16/cytoscape.js"></script>
+        
+        <!--  Chart.js for charts -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+        
+        <!-- My own JS -->
+       	<script src="<c:url value="/resources/js/graphs.js" />"></script>
+       	<script src="<c:url value="/resources/js/sidenav.js" />"></script>
+       	<script src="<c:url value="/resources/js/colors.js" />"></script>
+ 		
+    	       	
+    </head>
+    
+    
+    
+<body>

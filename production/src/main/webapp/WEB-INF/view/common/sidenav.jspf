@@ -1,0 +1,10 @@
+<div id="mySidenav" class="sidenav">
+		  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		  <a href="${pageContext.request.contextPath}/production/display">Tasks & Machines</a>
+		  <hr>
+		  <a href="${pageContext.request.contextPath}/annealing/display">Assignment problem - Model One</a>
+		  <hr>
+		  <a href="${pageContext.request.contextPath}/annealingtwo/getassign">Assignment problem - Model Two</a>
+		  <hr>
+</div>
+	
