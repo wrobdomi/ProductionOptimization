@@ -126,7 +126,7 @@ https://en.wikipedia.org/wiki/Simulated_annealing
   * src/main/webapp/WEB-INF/view
     + common
       * shared .jsp files
-    + common
+    + fragments
       * .jsp fragments
     + other .jsp
   * pom.xml
